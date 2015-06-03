@@ -15,7 +15,7 @@ namespace XamarinStarter
     {
         // class-level declarations
         UIWindow window;
-
+		CourseViewController viewController;
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -30,6 +30,8 @@ namespace XamarinStarter
 
             // If you have defined a view, add it here:
             // window.RootViewController  = navigationController;
+			viewController = new CourseViewController();
+			window.RootViewController = viewController;
 
             // make the window visible
             window.MakeKeyAndVisible();
